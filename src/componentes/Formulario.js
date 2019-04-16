@@ -2,6 +2,10 @@ import React, {Component} from 'react';
 
 class FormularioGasto extends Component {
 
+    
+    
+    
+    
     //refs para los campos del formulario
     nombreGasto = React.createRef();
     cantidadGasto = React.createRef();
@@ -17,7 +21,7 @@ class FormularioGasto extends Component {
 
         }
 
-        console.log(gasto);
+        // console.log(gasto);
 
         //Agregarlo y enviarlo por props
         this.props.agregarGasto(gasto);
@@ -25,6 +29,10 @@ class FormularioGasto extends Component {
         //Resetear el formulario (Opcional)
         e.currentTarget.reset();
     }
+
+
+
+
     render() {
         return (
             <form onSubmit={this.crearGasto}>
